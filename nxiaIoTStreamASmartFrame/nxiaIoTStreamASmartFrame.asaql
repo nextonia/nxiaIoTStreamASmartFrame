@@ -1,0 +1,15 @@
+﻿SELECT
+    *,
+    msg.idFrame as idFrame
+    ,GetRecordPropertyValue(msg.IotHub, 'ConnectionDeviceId') as deviceId
+    ,msg.EventProcessedUtcTime as dateProcessed
+    ,msg.EventEnqueuedUtcTime as dateEnqueued
+    ,msg.data as date
+    ,msg.status as status
+    ,msg.stage as stage
+    ,msg.sr as sr
+
+INTO
+    sfsales
+FROM
+    nxiaIotSF msg

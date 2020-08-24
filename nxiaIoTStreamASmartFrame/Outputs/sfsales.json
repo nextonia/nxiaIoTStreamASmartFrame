@@ -1,0 +1,35 @@
+﻿{
+  "EventHubProperties": null,
+  "BlobStorageProperties": null,
+  "SQLDatabaseProperties": null,
+  "TableStorageProperties": {
+    "AccountKey": null,
+    "AccountName": "nxiasmartframeadmin",
+    "BatchSize": 100,
+    "ColumnsToRemove": null,
+    "PartitionKey": "idFrame",
+    "RowKey": "date",
+    "Table": "sfsales"
+  },
+  "ServiceBusQueueProperties": null,
+  "ServiceBusTopicProperties": null,
+  "DocumentDbProperties": null,
+  "PowellBIProperties": null,
+  "AzureDataLakeStoreProperties": null,
+  "AzureFunctionProperties": null,
+  "DataSourceCredentialDomain": "b00e46f1-257e-4d67-bda8-d8920e8f07b9.StreamAnalyticsCredential",
+  "Name": "sfsales",
+  "DataSourceType": "Table Storage",
+  "Serialization": {
+    "Encoding": "UTF8",
+    "Type": "Json",
+    "FieldDelimiter": null,
+    "Format": "LineSeparated",
+    "SerializationDllPath": null,
+    "SerializationClassName": null,
+    "SerializationDllPathInLocal": null
+  },
+  "MinimumRows": null,
+  "MaximumTime": null,
+  "ScriptType": "Output"
+}

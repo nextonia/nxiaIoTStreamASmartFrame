@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E6C563F2-BDC2-4A24-ACBF-01715157DCBB}") = "nxiaIoTStreamASmartFrame", "nxiaIoTStreamASmartFrame\nxiaIoTStreamASmartFrame.asaproj", "{05449A33-82EE-4BF9-B1B3-29C3A07DC0DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05449A33-82EE-4BF9-B1B3-29C3A07DC0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05449A33-82EE-4BF9-B1B3-29C3A07DC0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05449A33-82EE-4BF9-B1B3-29C3A07DC0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05449A33-82EE-4BF9-B1B3-29C3A07DC0DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B025C9EE-5460-4095-8E6B-9E19BC3F88D8}
+	EndGlobalSection
+EndGlobal

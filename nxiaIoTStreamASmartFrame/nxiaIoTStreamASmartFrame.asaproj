@@ -1,0 +1,49 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>05449a33-82ee-4bf9-b1b3-29c3a07dc0db</ProjectGuid>
+    <OutputType>File</OutputType>
+    <AssemblyName>nxiaIoTStreamASmartFrame</AssemblyName>
+    <ASATargetsFilePath>$(AppData)\Microsoft\DataLake\MsBuild\1.0\StreamAnalytics.targets</ASATargetsFilePath>
+    <Name>nxiaIoTStreamASmartFrame</Name>
+    <RootNamespace>nxiaIoTStreamASmartFrame</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Functions\" />
+    <Folder Include="Inputs\" />
+    <Folder Include="Outputs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Configure Include="Configuration.json">
+      <SubType>JobConfig</SubType>
+    </Configure>
+    <Configure Include="Functions\JSFunction1.js.json">
+      <SubType>JSFunctionConfig</SubType>
+      <DependentUpon>Functions\JSFunction1.js</DependentUpon>
+    </Configure>
+    <Configure Include="Inputs\nxiaIotSF.json">
+      <SubType>Input</SubType>
+    </Configure>
+    <Configure Include="Outputs\sfsales.json">
+      <SubType>Output</SubType>
+    </Configure>
+  </ItemGroup>
+  <ItemGroup>
+    <Script Include="nxiaIoTStreamASmartFrame.asaql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Functions\JSFunction1.js">
+      <SubType>JSFunctionCode</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(ASATargetsFilePath)" />
+</Project>

@@ -1,0 +1,30 @@
+﻿{
+  "Sample": null,
+  "EventHubProperties": null,
+  "BlobStorageProperties": null,
+  "IoTHubProperties": {
+    "ConsumerGroupName": "$Default",
+    "IotHubNamespace": "nxiaIotSmarFrame",
+    "SharedAccessPolicyKey": null,
+    "SharedAccessPolicyName": "service",
+    "EndPoint": "messages/events"
+  },
+  "BlobReferenceProperties": null,
+  "SqlReferenceInputInfo": null,
+  "InputPartionKey": "",
+  "DataSourceCredentialDomain": "dada40c3-5f15-4159-8b2f-830789cfa3a9.StreamAnalyticsCredential",
+  "Name": "nxiaIotSF",
+  "Type": "Data Stream",
+  "DataSourceType": "IoT Hub",
+  "Serialization": {
+    "Encoding": "UTF8",
+    "Type": "Json",
+    "FieldDelimiter": null,
+    "Format": null,
+    "SerializationDllPath": null,
+    "SerializationClassName": null,
+    "SerializationDllPathInLocal": null
+  },
+  "CompresssionType": "None",
+  "ScriptType": "Input"
+}
